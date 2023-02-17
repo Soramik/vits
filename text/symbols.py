@@ -2,10 +2,12 @@
 Defines the set of symbols used in text input to the model.
 '''
 
+text_cleaners = 'zh_ja_mixture_cleaners'
 
-from utils import get_hparams
 
-text_cleaners = get_hparams().get('data').get('text_cleaners')
+if text_cleaners == 'sora_cleaners':
+    text_cleaners = 'zh_ja_mixture_cleaners'
+
 
 # japanese_cleaners
 if text_cleaners == "japanese_cleaners":
