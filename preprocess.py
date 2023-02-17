@@ -6,8 +6,8 @@ if __name__ == '__main__':
   parser = argparse.ArgumentParser()
   parser.add_argument("--out_extension", default="cleaned")
   parser.add_argument("--text_index", default=2, type=int)
-  parser.add_argument("--filelists", nargs="+", default=["filelists/ljs_audio_text_val_filelist.txt", "filelists/ljs_audio_text_test_filelist.txt"])
-  parser.add_argument("--text_cleaners", nargs="+", default=["zh_ja_mixture_cleaners"])
+  parser.add_argument("--filelists", nargs="+", default=["filelists/SoraVoice_filelist_val.txt", "filelists/SoraVoice_filelist_train.txt"])
+  parser.add_argument("-C", "--text_cleaners", nargs="+", default=["sora_cleaners"], help="文本编码器，默认为 sora_cleaners")
 
   args = parser.parse_args()
     
