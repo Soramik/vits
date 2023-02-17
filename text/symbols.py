@@ -2,6 +2,7 @@
 Defines the set of symbols used in text input to the model.
 '''
 
+
 from utils import get_hparams
 
 text_cleaners = get_hparams().get('data').get('text_cleaners')
