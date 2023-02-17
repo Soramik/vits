@@ -8,7 +8,6 @@ text_cleaners = 'zh_ja_mixture_cleaners'
 if text_cleaners == 'sora_cleaners':
     text_cleaners = 'zh_ja_mixture_cleaners'
 
-
 # japanese_cleaners
 if text_cleaners == "japanese_cleaners":
     _pad        = '_'
